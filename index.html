@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+    <title>Weather API</title>
+  </head>
+  <body>
+    <div class="container">
+      <ul class ="symbols">
+        <li><i class="fas fa-cloud-rain"></i></i></li>
+        <li><i class="far fa-sun"></i></li>
+        <li><i class="fas fa-snowflake"></i></li>
+        <li><i class="fas fa-bolt"></i></li>
+      </ul>
+
+      <h1>Weather <span>Corner</span></h1>
+
+      <div class="dateofweather">
+        <form action="weatherdate">
+
+        <div class="content">
+          <label for="date" >Date of Event</label>
+          <p><input class="fieldwidth" type="date" id="date" /></p>
+        </div>
+        <div class="content">
+          <p><label for="postcode" >Post Code</label></p>
+          <input type="text" id="postcode" class="fieldwidth" />
+        </div>
+          <div>
+          <button>Get Info!</button>
+        </div class="content">
+        </form>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
